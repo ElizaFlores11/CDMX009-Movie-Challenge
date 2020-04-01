@@ -1,7 +1,71 @@
+@font-face {
+    font-family: "Tangerine_Bold";
+    src: url("fonts/Tangerine_Bold.ttf");
+    src: url("fonts/Tangerine_Regular.ttf");
+  }
+  
 body{
     margin: 0;
     padding: 0;
-    background-color: #F9CB9C;
+    background-color: #5DADE2 ;
 	height: 100px;
 	width: 100%;
+}
+header{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color:#C0392B;
+}
+.icono{
+    width: 40%;
+    padding-left: 40px;
+}
+.titulo{
+    width: 60%;
+    font-family: "Tangerine_Bold";
+    padding: 20px;
+}
+.titulo h1{
+    font-size: 50px;
+}
+.container {
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #008F99;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 7px 1px #333;
+}
+.image-slider{
+    width: 400px;
+    height: 90%;
+    margin: 50px auto;
+    border: 10px solid #009696;
+    position: relative;
+    box-shadow: 0px 0px 10px 2px grey;
+    border-radius: 10px;
+}
+.image-slider .img{
+    width: 400px;
+    height: 350px;
+}
+.btn-left, .btn-right{
+    position: absolute;
+    top: 60%;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn-left{
+    left: 100px;
+}
+.btn-right{
+    right: 100px;
+}
+.btn-left:hover, .btn-right:hover{
+    background-color: #009696 ;
 }
